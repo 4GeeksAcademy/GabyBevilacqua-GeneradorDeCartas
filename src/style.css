@@ -1,12 +1,61 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
-  background-color: rgb(0, 124, 128);
+  height: 100vh;
+  background-color: rgb(17, 27, 27);
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  background-image: url(https://img.freepik.com/foto-gratis/estilo-vida-fotorrealista-casino_23-2151037055.jpg?t=st=1728841047~exp=1728844647~hmac=27ed647ec70da1d59aef69ee507e7108cc1bd0e3b57cbf368dc01fb83bd950e8&w=740);
 }
 
 #card {
-  background-color: aliceblue;
+  background-color: rgb(202, 225, 245);
   width: 300px;
   height: 500px;
   border-radius: 20px;
   margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.redSuit {
+  color: red;
+}
+.stylesSuites {
+  font-size: 50px;
+}
+
+.styleValue {
+  font-size: 120px;
+}
+
+#card div:nth-child(1) {
+  align-self: start;
+  margin-left: 20px;
+}
+
+.suitBottom {
+  /* opcion usando clase*/
+  align-self: end;
+  margin-right: 20px;
+}
+
+/*#card div:nth-child(3) {   opcion declarando el uso del div hijo
+  align-self: end;
+}*/
+.sizes {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: azure;
+}
+h3 {
+  color: azure;
+}
+p {
+  color: rgb(178, 196, 196);
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de cartas</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,9 +13,32 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div id="container" class="container-fluid text-center">
-      <div id="card"></div>
-      <button id="btn-newCard" class="btn btn-secondary">Generar Carta</button>
+    <div class="container shadow-lg">
+      <div class="text text-center mt-3">
+        <h1>Generador de cartas aleatorias</h1>
+        <p>
+          Cada 10 segundos cambiará de manera automática si no le das al botón.
+        </p>
+      </div>
+      <div id="container" class="container-fluid text-center">
+        <div id="card"></div>
+        <button id="btn-newCard" class="btn btn-secondary border border-light">
+          Generar Carta
+        </button>
+      </div>
+      <div class="texto text-center mt-3">
+        <h3>Coloca el tamaño que gustes</h3>
+      </div>
+      <div class="sizes">
+        <input
+          type="text"
+          id="heigth"
+          name="heigth"
+          class="me-2"
+          placeholder="Heigth"
+        />
+        <input type="text" id="width" name="width" placeholder="Width" />
+      </div>
     </div>
   </body>
 </html>
